@@ -1,0 +1,38 @@
+&lt;html&gt; </br>
+&lt;head&gt; </br>
+    &lt;title&gt;Demo02&lt;/title&gt; </br>
+    &lt;pre&gt; </br>
+        &lt;code&gt; </br>
+     &lt;script type="text/javascript"&gt; </br>
+        
+        function positiveOrNegative() { </br>
+            var num = parseInt(document.getElementById("num").value); </br>
+            var result = ""; </br>
+
+            if (num &gt; 0) </br>
+                result = "Positive Number";  </br>
+            
+            else if (num &lt; 0)  </br>
+                result = "Negative Number";  </br>
+
+            else  </br>
+                result = "Number is Zero(0)"; </br>
+
+            document.getElementById('result').innerHTML = result; </br>
+        } </br>
+
+    &lt;/script&gt;  </br>
+    &lt;/code&gt;   </br>
+    &lt;/pre&gt;   </br>
+    &lt;/head&gt;  </br>
+    &lt;body&gt;   </br>
+        
+        Enter a Number: &lt;input type="text" id="num" /&gt; &lt;br/&gt;  </br>
+        &lt;button onclick="positiveOrNegative()"&gt;+Ve or -Ve or 0&lt;/button&gt; &lt;br/&gt;&lt;br/&gt;  </br>
+    
+        &lt;h1 id="result"&gt;&lt;/h1&gt;  </br>
+    
+    &lt;/body&gt; </br>
+    &lt;/html&gt; </br>
+    <img src="ss2.png" style=" height: 320px; width:45vw;float: right;margin-top:-380px;"/>
+    

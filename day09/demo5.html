@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Demo5</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        var myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        document.write("Initial Array Values <br/>");
+        for (var i = 0; i < myArr.length; i++) {
+            document.write(myArr[i] + " ");
+        }
+        document.write("<br/><br/>");
+
+        function getEvenNumbers(arr) {
+            var resultArray = new Array();  //Empty Array
+
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] % 2 == 0) {
+                    resultArray.push(arr[i]);
+                }
+            }
+
+            return resultArray;
+        }
+        
+        var newArray = getEvenNumbers(myArr);
+
+        document.write("Array Values After Square <br/>");
+        for (var i = 0; i < newArray.length; i++) {
+            document.write(newArray[i] + " ");
+        }
+                
+    </script>
+</body>
+</html>

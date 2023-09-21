@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Demo4Map</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        var myArr = [1, 2, 3, 4, 5];
+
+        document.write("Initial Array Values <br/>");
+        for (var i = 0; i < myArr.length; i++) {
+            document.write(myArr[i] + " ");
+        }
+        document.write("<br/><br/>");
+
+        //Using Map()
+        var newArray = myArr.map(item => item ** 2);
+
+        document.write("Array Values After Square <br/>");
+        for (var i = 0; i < newArray.length; i++) {
+            document.write(newArray[i] + " ");
+        }
+                
+    </script>
+</body>
+</html>

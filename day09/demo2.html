@@ -1,0 +1,33 @@
+&lt;!DOCTYPE html&gt;  </br>
+&lt;html lang="en"&gt; </br>
+&lt;head&gt; </br>
+    &lt;title&gt;Demo2&lt;/title&gt; </br>
+&lt;/head&gt; </br>
+&lt;body&gt;  </br>
+    &lt;script type="text/javascript"&gt; </br>
+
+        function findCube(num) { </br>
+            return num * num * num; </br>
+        } </br>
+        var result1 = findCube(3); </br>
+        document.write("Result: " + result1 + "&lt;br/&gt;&lt;br/&gt;"); </br>
+
+        
+        var result2 = function findCube(num) { </br>
+            return num * num * num; </br>
+        } </br>
+        document.write("Result: " + result2(4) + "&lt;br/&gt;&lt;br/&gt;"); </br>
+
+        var result3 = (num) =&gt; { </br>
+            return num * num * num; </br>
+        } </br>
+        document.write("Result: " + result3(5) + "&lt;br/&gt;&lt;br/&gt;"); </br>
+
+        var result4 = (num) =&gt; num * num * num; </br>
+        document.write("Result: " + result4(6) + "&lt;br/&gt;&lt;br/&gt;"); </br>
+        
+    &lt;/script&gt; </br>
+&lt;/body&gt; </br>
+&lt;/html&gt; </br>
+
+<img src="ss2.png" style=" height: 300px; width: 50vw;float: right;margin-top:-380px;"/>

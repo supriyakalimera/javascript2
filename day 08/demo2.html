@@ -1,0 +1,51 @@
+&lt;!DOCTYPE html&gt; </br>
+&lt;html lang="en"&gt; </br>
+  &lt;head&gt; </br>
+    &lt;meta charset="UTF-8" /&gt; </br>
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt; </br>
+    &lt;title&gt;Document&lt;/title&gt; </br>
+  &lt;/head&gt; </br>
+  &lt;body&gt; </br>
+    &lt;script type="text/javascript"&gt; </br>
+      var str = "Welcome to JavaScript"; </br>
+
+      document.write("Original string is: " + str + "&lt;br&gt;&lt;br&gt;"); </br>
+      document.write("The length of String using str.length: " + str.length); </br>
+      if (str.includes("Java")) { </br>
+        document.write("&lt;br&gt;Using str.includes found java"); </br>
+      } else { </br>
+        document.write("&lt;br&gt;Using str.includes not found java"); </br>
+      } </br>
+      document.write("&lt;br&gt;The value at index 3 using str[3] is: " + str[3]); </br>
+      document.write( </br>
+        "&lt;br&gt;The index of javascript using str.indexOf(javascript) is: " + </br>
+          str.indexOf("Javascript") </br>
+      ); </br>
+      document.write( </br>
+        "&lt;br&gt;Extracting substring from string using str.slice(11,21) is: " + </br>
+          str.slice(11, 21) </br>
+      ); </br>
+      document.write( </br>
+        "&lt;br&gt; changing to upperCase using toUppercase() is: " + </br>
+          str.toUpperCase() </br>
+      ); </br>
+      document.write( </br>
+        "&lt;br&gt; changing to LowerCase using toLowercase() is: " + </br>
+          str.toLowerCase() </br>
+      ); </br>
+      var str1 = "Welcome to Java and JavaScript"; </br>
+      var str2 = str1.replace("Java", "Type"); </br>
+      document.write( </br>
+        "&lt;br&gt; Updating the string using replace(existing, new) is: " + str2 </br>
+      ); </br>
+      var str2 = str1.replaceAll("Java", "Type"); </br>
+      document.write( </br>
+        "&lt;br&gt; Updating the string using replaceAll(existing, new) is: " + str2 </br>
+      );  </br>
+      for (var i = 0; i &lt; str.length; i++) { </br>
+        document.write("&lt;br&gt;" + str.charAt(i)); </br>
+      } </br>
+    &lt;/script&gt; </br>
+  &lt;/body&gt; </br>
+&lt;/html&gt; </br>
+<img src="Screenshot (3195).png" style=" height: 300px; width: 50vw;float: right;margin-top:-750px;"/>

@@ -1,0 +1,33 @@
+&lt;html&gt; </br>
+
+&lt;head&gt; </br>
+    &lt;title&gt;Prime Number&lt;/title&gt; </br>
+&lt;/head&gt; </br>
+
+&lt;body&gt; </br>
+    &lt;script type="text/javascript"&gt; </br>
+        
+        function isPrime(num) { </br>
+            var count = 0; </br>
+            
+            for (var i = 2; i &lt; num; i++) { </br>
+                if (num % i == 0) { </br>
+                    count++; </br>
+                } </br>
+            } </br>
+
+            if (count == 0) { </br>
+                return document.write(num + " is a prime number"); </br>
+            } else {  </br>
+                return document.write(num + " is not a prime Number"); </br>
+            } </br>
+        } </br>
+
+        var num = Number(prompt("Enter a Number:")); </br>
+        isPrime(num); </br>
+
+    &lt;/script&gt; </br>
+&lt;/body&gt; </br>
+
+&lt;/html&gt; </br>
+<img src="ss2.png" style=" height: 300px; width: 50vw;float: right;margin-top:-380px;"/>

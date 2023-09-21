@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Demo7</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        var myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        document.write("Initial Array Values <br/>");
+        for (var i = 0; i < myArr.length; i++) {
+            document.write(myArr[i] + " ");
+        }
+        document.write("<br/><br/>");
+        function sumoftwo( arr){
+           var sum=0;
+           
+           for(var i=0;i<myArr.length;i++){
+              sum += arr[i];
+           }
+           return sum;
+        }  
+
+    </script>
+</body>
+</html>

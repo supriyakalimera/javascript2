@@ -1,0 +1,57 @@
+&lt;html&gt; </br>
+&lt;head&gt; </br>
+    &lt;title&gt;Demo02&lt;/title&gt; </br>
+    &lt;pre&gt; </br>
+      &lt;code&gt; </br>
+    &lt;script type="text/JavaScript"&gt; </br>
+
+        function sum() { </br>
+            var num1 = parseInt(document.getElementById("num1").value); </br>
+            var num2 = parseInt(document.getElementById("num2").value);  </br>
+            document.getElementById('result').innerHTML = "Sum = " + (num1 + num2); </br>
+        } </br>
+
+        function sub() {  </br>
+            var num1 = parseInt(document.getElementById("num1").value); </br>
+            var num2 = parseInt(document.getElementById("num2").value);  </br>        
+            document.getElementById('result').innerHTML = "Sub = " + (num1 - num2); </br>
+        } </br>
+
+        function mul() {   </br>
+            var num1 = parseInt(document.getElementById("num1").value); </br>
+            var num2 = parseInt(document.getElementById("num2").value);  </br>        
+            document.getElementById('result').innerHTML = "Mul = " + (num1 * num2); </br>
+        }  </br>
+
+        function quo() { </br>
+            var num1 = parseInt(document.getElementById("num1").value); </br>
+            var num2 = parseInt(document.getElementById("num2").value);  </br>     
+            document.getElementById('result').innerHTML = "Quo = " + (num1 / num2);   </br>
+        }  </br>
+
+        function rem() {     </br>
+            var num1 = parseInt(document.getElementById("num1").value); </br>
+            var num2 = parseInt(document.getElementById("num2").value);  </br>
+            document.getElementById('result').innerHTML = "Rem = " + (num1 % num2);   </br>
+        }  </br>
+      &lt;/script&gt;  </br>
+    &lt;/code&gt;   </br> 
+ &lt;/pre&gt; </br>
+&lt;/head&gt; </br>
+&lt;body&gt; </br>
+
+    Enter Number1: &lt;input type="text" id="num1" /&gt; &lt;br/&gt; </br>
+    Enter Number2: &lt;input type="text" id="num2" /&gt; &lt;br/&gt;&lt;br/&gt; </br>
+
+    &lt;button onclick="sum()"&gt;Sum&lt;/button&gt; &nbsp; </br>
+    &lt;button onclick="sub()"&gt;Sub&lt;/button&gt; &nbsp; </br>
+    &lt;button onclick="mul()"&gt;Mul&lt;/button&gt; &nbsp; </br>
+    &lt;button onclick="quo()"&gt;Quo&lt;/button&gt; &nbsp;  </br>
+    &lt;button onclick="rem()"&gt;Rem&lt;/button&gt; &nbsp; </br>
+ 
+    &lt;p id="result"&gt;&lt;/p&gt;&lt;br/&gt;  </br>
+&lt;/body&gt; </br>
+&lt;/html&gt; </br>
+<img src="ss2.png" style="height:290px; float:right; width: 40vw; margin-top: -660;"/> 
+
+

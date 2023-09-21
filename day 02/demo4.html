@@ -1,0 +1,29 @@
+<html>
+<head>
+    <!----Area of the Circle, using Prompt-->
+    <title>Demo04</title>
+    <script type="text/JavaScript">
+        function findCircleArea() {
+            var radius = parseInt(prompt('Enter Radius:'));
+            var area = Math.PI * Math.pow(radius, 2); 
+            area = Math.floor(area);
+            alert(`Area of the Circle with radius: ${radius} is: ${area}`);        
+        }
+    </script>
+</head>
+<body>
+    <button onclick="findCircleArea()">Find Circle Area</button>
+ <!--ex-2--->
+ <script>
+ var radius = parseInt(prompt('Enter Radius:'));
+ var area = Math.PI * Math.pow(radius, 2);
+ console.log(`Area of the Circle with radius: ${radius} is: ${area}`);
+</script>
+<!--ex-3---->
+<script>
+    var radius = parseInt(prompt('Enter Radius:'));
+var area = 3.141 * radius * radius;
+console.log("Area of the Circle with radius: " + radius + " is: " + area);
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+&lt;html&gt; </br>
+&lt;head&gt;  </br>
+    &lt;title&gt;Perfect&lt;/title&gt;  </br>
+&lt;/head&gt;  </br>
+&lt;body&gt;   </br>
+    &lt;script type="text/javascript"&gt;  </br>
+
+        var num = Number(prompt("Enter a Number: "));  </br>
+
+        function getFactorsSum(num) {  </br>
+           var sum = 0;  </br>
+           for (var i = 1; i &lt; num; i++) {  </br>
+                if (num % i == 0) {  </br>
+                    sum += i;  </br>
+                }  </br>
+           }  </br>
+           return sum;  </br>
+        }  </br>
+        
+        if (getFactorsSum(num) == num) {  </br>
+            document.write(num + " is a Perfect number");  </br>
+        } else {  </br>
+            document.write(num + " is not a Perfect Number");  </br>
+        }  </br>
+
+    &lt;/script&gt;  </br>
+&lt;/body&gt;  </br>
+&lt;/html&gt;  </br>
+
+<img src="Screenshot (3189).png" style=" height: 300px; width: 50vw;float: right;margin-top:-380px;"/>

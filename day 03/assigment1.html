@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Demo1</title>
+    <script type="text/javascript">
+
+        function calculate() {
+            let sub1 = Number(document.getElementById("sub1").value);
+            let sub2 = Number(document.getElementById("sub2").value);
+            let sub3 = Number(document.getElementById("sub3").value);
+            
+            let result = "";
+            
+            if(sub1 < 36 || sub2 < 36 || sub3 < 36){
+                
+                result = "Failed";
+
+            } else {
+                
+                let total = sub1 + sub2 + sub3;
+                let avg = total / 3;
+
+                if(avg >= 75) 
+                    result = "Distinction";  
+
+                else if(avg >= 60)
+                    result = "1st Division";
+                
+                else if(avg >= 50) 
+                    result = "2nd Division";
+                
+                else
+                    result = "3rd Division";
+                
+            }
+
+            document.getElementById("result").innerHTML = result;
+        }
+
+    </script>
+</head>
+<body>
+        Enter sub1 Marks: <input type="text" id="sub1" /> <br />
+        Enter sub2 Marks: <input type="text" id="sub2" /><br>
+        Enter sub3 Marks: <input type="text" id="sub3" /><br>
+
+        <button onclick="calculate()">Get Result</button>
+        <h1 id="result"></h1>
+</body>
+</html>

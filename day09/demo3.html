@@ -1,0 +1,38 @@
+&lt;!DOCTYPE html&gt;  </br>
+&lt;html lang="en"&gt; </br>
+&lt;head&gt;  </br>
+    &lt;title&gt;Demo3Map&lt;/title&gt; </br>
+&lt;/head&gt; </br>
+&lt;body&gt; </br>
+    &lt;script type="text/javascript"&gt; </br>
+
+        var myArr = [1, 2, 3, 4, 5]; </br>
+
+        document.write("Initial Array Values &lt;br/&gt;"); </br>
+        for (var i = 0; i &lt; myArr.length; i++) {  </br>
+            document.write(myArr[i] + " "); </br>
+        } </br>
+        document.write("&lt;br/&gt;&lt;br/&gt;"); </br>
+
+        function performSquare(arr) { </br>
+            var resultArray = new Array(); </br>
+            
+            for (var i = 0; i &lt; myArr.length; i++) { </br>
+                resultArray.push(Math.pow(myArr[i], 2)); </br>
+            } </br>
+
+            return resultArray; </br>
+        } </br>
+        
+        var newArray = performSquare(myArr); </br>
+ 
+        document.write("Array Values After Square &lt;br/&gt;"); </br>
+        for (var i = 0; i &lt; newArray.length; i++) { </br>
+            document.write(newArray[i] + " "); </br>
+        } </br>
+                
+    &lt;/script&gt; </br>
+&lt;/body&gt; </br>
+&lt;/html&gt; </br>
+
+<img src="ss3.png" style=" height: 300px; width: 50vw;float: right;margin-top:-380px;"/>

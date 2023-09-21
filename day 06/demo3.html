@@ -1,0 +1,35 @@
+&lt;!DOCTYPE html&gt; </br>
+&lt;html lang="en"&gt; </br>
+&lt;head&gt;  </br>
+    &lt;meta charset="UTF-8"&gt; </br>
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; </br>
+    &lt;title&gt;perfectno&lt;/title&gt; </br>
+&lt;/head&gt; </br>
+&lt;body&gt; </br>
+    &lt;script&gt; </br> 
+        var start = parseInt(prompt("Enter Starting Range: ")) </br>
+        var end = parseInt(prompt("Enter End Range")); </br>
+
+        document.write("perfect numbers from " + start + " to " + end + " are :"); </br>
+
+        end++; </br>
+        for (var num = start; num &lt; end; num++) { </br>
+             var sum = 0; </br>
+            for(let i = 1;i&lt;num;i++){ </br>
+                if (num % i == 0) { </br>
+                    sum += (i); </br>
+                } </br>
+            } </br>
+    
+            if (sum == num) { </br>
+                document.write(num + " "); </br> 
+            } </br>
+        } </br>
+    &lt;/script&gt; </br>
+&lt;/body&gt; </br>
+&lt;/html&gt; </br>
+
+<img src="ss3.png" style=" height: 300px; width: 50vw;float: right;margin-top:-380px;"/>
+ 
+
+

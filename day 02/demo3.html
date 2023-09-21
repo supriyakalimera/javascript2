@@ -1,0 +1,49 @@
+&lt;html&gt; </br>
+&lt;head&gt; </br>
+    &lt;title&gt;Demo03&lt;/title&gt; </br>
+    &lt;pre&gt; </br>
+      &lt;code&gt; </br>
+    &lt;script type="text/JavaScript"&gt; </br>
+ 
+        function beforeSwap() { </br>
+            var num1 = parseInt(document.getElementById("num1").value); </br>
+            var num2 = parseInt(document.getElementById("num2").value); </br>
+
+            document.getElementById('breforeSwap').innerHTML = "Before Swap &lt;br/&gt;" +  </br>
+            "num1 = " + num1 + "&lt;br/&gt;" +  </br>
+            "num2 = " + num2 ; </br>
+        } </br>
+
+        function afterSwap() { </br> 
+            var num1 = parseInt(document.getElementById("num1").value); </br>
+            var num2 = parseInt(document.getElementById("num2").value); </br>
+
+            var temp = num1; </br>
+            num1 = num2; </br>
+            num2 = temp; </br>
+
+            document.getElementById('afterSwap').innerHTML = "After Swap &lt;br/&gt;" + </br>
+            "num1 = " + num1 + "&lt;br/&gt;" +  </br>
+            "num2 = " + num2; </br>
+        } </br>
+
+    &lt;/script&gt; </br>
+    &lt;/code&gt; </br>
+    &lt;/pre&gt; </br>
+
+&lt;/head&gt; </br>
+&lt;body&gt; </br>
+
+    Enter Number1: &lt;input type="text" id="num1" /&gt; &lt;br/&gt; </br>
+    Enter Number2: &lt;input type="text" id="num2" /&gt; &lt;br/&gt; </br>
+
+    &lt;button onclick="beforeSwap()"&gt;BeforeSwap&lt;/button&gt; &nbsp; </br>
+    &lt;button onclick="afterSwap()"&gt;AfterSwap&lt;/button&gt; &lt;br/&gt; </br>
+
+    &lt;p id="breforeSwap"&gt;&lt;/p&gt; </br>
+    &lt;p id="afterSwap"&gt;&lt;/p&gt; </br>
+&lt;/body&gt; </br>
+&lt;/html&gt; </br>
+<img src="ss3.png" style="height:290px; float:right; width: 40vw; margin-top: -560;"/> 
+
+

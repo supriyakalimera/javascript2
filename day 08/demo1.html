@@ -1,0 +1,119 @@
+&lt;!DOCTYPE html&gt; </br>
+&lt;html lang="en"&gt; </br>
+  &lt;head&gt; </br>
+    &lt;meta charset="UTF-8" /&gt; </br>
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt; </br>
+    &lt;title&gt;Document&lt;/title&gt; </br>
+  &lt;/head&gt; </br>
+  &lt;body&gt; </br>
+    &lt;script type="text/javascript"&gt; </br>
+      var arr = [20, 22, 13, 54, 15, 54]; </br>
+
+      document.write("Length of the Array: " + arr.length + "&lt;br/&gt;"); </br>
+
+      arr.push(11); </br>
+      document.write("Length of the Array: " + arr.length + "&lt;br/&gt;"); </br>
+      for (var i = 0; i &lt; arr.length; i++) {  </br>
+        document.write(arr[i] + " "); </br>
+      } </br>
+      document.write("&lt;br/&gt;&lt;br/&gt;"); </br>
+
+      arr.pop(); </br>
+      document.write("Length of the Array: " + arr.length + "&lt;br/&gt;"); </br>
+      for (var i = 0; i &lt; arr.length; i++) { </br>
+        document.write(arr[i] + " "); </br>
+      } </br>
+      document.write("&lt;br/&gt;&lt;br/&gt;"); </br>
+
+      arr.shift(); </br>
+      document.write("Length of the Array: " + arr.length + "&lt;br/&gt;"); </br>
+      for (var i = 0; i &lt; arr.length; i++) { </br>
+        document.write(arr[i] + " "); </br>
+      } </br>
+      document.write("&lt;br/&gt;&lt;br/&gt;"); </br>
+ 
+      arr.unshift(5); </br>
+      document.write("Length of the Array: " + arr.length + "&lt;br/&gt;"); </br>
+      for (var i = 0; i &lt; arr.length; i++) { </br>
+        document.write(arr[i] + " "); </br>
+      } </br>
+      document.write("&lt;br/&gt;&lt;br/&gt;"); </br>
+
+      arr.unshift(1, 10, 11, 12); </br>
+      document.write("Length of the Array: " + arr.length + "&lt;br/&gt;"); </br>
+      for (var i = 0; i &lt; arr.length; i++) { </br>
+        document.write(arr[i] + " "); </br>
+      } </br>
+      document.write("&lt;br/&gt;&lt;br/&gt;"); </br>
+
+      arr.splice(1, 3); //Removes the elements for 1st index to 3rd index </br>
+      document.write("Length of the Array: " + arr.length + "&lt;br/&gt;"); </br>
+      for (var i = 0; i &lt; arr.length; i++) { </br>
+        document.write(arr[i] + " "); </br>
+      } </br>
+      document.write("&lt;br/&gt;&lt;br/&gt;"); </br>
+
+      arr.splice(1, 0, 3); </br>
+      document.write("Length of the Array: " + arr.length + "&lt;br/&gt;"); </br>
+      for (var i = 0; i &lt; arr.length; i++) { </br>
+        document.write(arr[i] + " "); </br>
+      } </br>
+      document.write("&lt;br/&gt;&lt;br/&gt;"); </br>
+
+      var arr2 = arr.slice(2, 5); </br>
+      document.write("Length of the Array: " + arr2.length + "&lt;br/&gt;"); </br>
+      for (var i = 0; i &lt; arr2.length; i++) { </br>
+        document.write(arr2[i] + " "); </br>
+      } </br>
+      document.write("&lt;br/&gt;&lt;br/&gt;"); </br>
+
+      arr.reverse(); </br>
+      document.write("Length of the Array: " + arr.length + "&lt;br/&gt;"); </br>
+      for (var i = 0; i &lt; arr.length; i++) { </br>
+        document.write(arr[i] + " "); </br>
+      } </br>
+      document.write("&lt;br/&gt;&lt;br/&gt;"); </br>
+
+      arr.reverse(); </br>
+      document.write("Length of the Array: " + arr.length + "&lt;br/&gt;"); </br>
+      for (var i = 0; i &lt; arr.length; i++) { </br>
+        document.write(arr[i] + " ");  </br>
+      } </br>
+      document.write("&lt;br/&gt;&lt;br/&gt;"); </br>
+
+      arr.sort(); </br>
+      document.write("Length of the Array: " + arr.length + "&lt;br/&gt;"); </br>
+      for (var i = 0; i &lt; arr.length; i++) { </br>
+        document.write(arr[i] + " "); </br>
+      } </br>
+      document.write("&lt;br/&gt;&lt;br/&gt;"); </br>
+
+      document.write("Index of 15: " + arr.indexOf(15) + "&lt;br/&gt;&lt;br/&gt;"); </br>
+      document.write("Index of 54: " + arr.indexOf(54) + "&lt;br/&gt;&lt;br/&gt;"); </br>
+
+      arr3 = [99, 98, 97]; </br>
+      arr4 = arr.concat(arr3); </br>
+      document.write("Length of the Array: " + arr4.length + "&lt;br/&gt;"); </br>
+      for (var i = 0; i &lt; arr4.length; i++) { </br>
+        document.write(arr4[i] + " "); </br>
+      } </br>
+      document.write("&lt;br/&gt;&lt;br/&gt;"); </br>
+
+      document.write("includes(22): " + arr.includes(22) + "&lt;br/&gt;"); </br>
+      document.write("includes(23): " + arr.includes(23) + "&lt;br/&gt;&lt;br/&gt;"); </br>
+
+      document.write("lastIndexOf(54): " + arr.lastIndexOf(54) + "&lt;br/&gt;&lt;br/&gt;"); </br>
+
+      document.write( </br>
+        "Minimum Value: " + Math.min.apply(null, arr) + "&lt;br/&gt;&lt;br/&gt;" </br>
+      ); </br>
+      document.write( </br>
+        "Minimum Value: " + Math.max.apply(null, arr) + "&lt;br/&gt;&lt;br/&gt;" </br>
+      ); </br>
+
+      var str = arr.toString(); </br>
+      document.write("Array in String Format: " + str + "&lt;br/&gt;&lt;br/&gt;"); </br>
+    &lt;/script&gt; </br>
+  &lt;/body&gt; </br>
+&lt;/html&gt; </br>
+<img src="Screenshot (3195).png" style=" height: 300px; width: 50vw;float: right;margin-top:-1680px;"/>

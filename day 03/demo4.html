@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Demo03</title>
+
+    <script type="text/javascript">
+        
+        function teenager() {
+            var age = parseInt(document.getElementById("num").value);
+            var result = "";
+            if(age > 12 && age <20)
+               result= " teenager"
+            else  
+               result = " not a teenager"
+
+            document.getElementById('result').innerHTML = result;
+        }
+
+    </script>
+
+</head>
+<body>
+    
+    Enter Your Age: <input type="text" id="num" /> <br/>
+    <button onclick="teenager()">Can I Vote</button> <br/><br/>
+
+    <h1 id="result"></h1>
+
+</body>
+</html>

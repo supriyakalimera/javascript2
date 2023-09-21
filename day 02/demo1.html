@@ -1,0 +1,36 @@
+&lt;html&gt; </br>
+&lt;head&gt; </br>
+    &lt;title&gt;Demo01&lt;/title&gt; </br>
+
+    &lt;script type="text/JavaScript"&gt; </br>
+
+        function calculate() { </br>
+            var num1 = parseInt(document.getElementById("num1").value); </br>
+            var num2 = parseInt(document.getElementById("num2").value); </br>
+ 
+            var result =  </br>
+            "Sum: " + (num1 + num2) + "&lt;br/&gt;" +  </br>
+            "Sub: " + (num1 - num2) + "&lt;br/&gt;" +  </br>
+            "Mul: " + (num1 * num2) + "&lt;br/&gt;" +  </br>
+            "Quo: " + (num1 / num2) + "&lt;br/&gt;" +  </br>
+            "Rem: " + (num1 % num2) + "&lt;br/&gt;";  </br>
+
+            document.getElementById('result').innerHTML = result; </br>
+        } </br>
+
+    &lt;/script&gt; </br>
+
+&lt;/head&gt; </br>
+&lt;body&gt; </br>
+
+    Enter Number1: &lt;input type="text" id="num1" /&gt; &lt;br/&gt; </br>
+    Enter Number2: &lt;input type="text" id="num2" /&gt; &lt;br/&gt;&lt;br/&gt; </br>
+
+    &lt;button onclick="calculate()"&gt;Calculate&lt;/button&gt; &lt;br/&gt;&lt;br/&gt; </br>
+
+    &lt;p id="result"&gt;&lt;/p&gt;&lt;br/&gt;  </br>
+&lt;/body&gt;  </br>
+&lt;/html&gt;  </br>
+<img src="Screenshot (3153).png" style="height:290px; float:right; width: 50vw; margin-top: -260;"/>
+
+

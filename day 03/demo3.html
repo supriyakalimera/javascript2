@@ -1,0 +1,33 @@
+&lt;html&gt; </br>
+&lt;head&gt; </br>
+    &lt;title&gt;Demo03&lt;/title&gt; </br>
+    &lt;pre&gt; </br>
+    &lt;code&gt; </br>
+    &lt;script type="text/javascript"&gt; </br>
+        
+        function eligibleForVote() { </br>
+            var num = parseInt(document.getElementById("num").value); </br>
+            var result = ""; </br>
+           
+            if(num &gt; 17) </br>
+                result = "you are eligible"; </br>
+            else </br>
+               result = "you are not eligible"; </br>
+
+            document.getElementById('result').innerHTML = result; </br>
+        } </br>
+    &lt;/script&gt; </br>
+    &lt;/code&gt; </br>
+     &lt;/pre&gt; </br>
+
+&lt;/head&gt; </br>
+&lt;body&gt; </br>
+    
+    Enter Your Age: &lt;input type="text" id="num" /&gt; &lt;br/&gt; </br>
+    &lt;button onclick="eligibleForVote()"&gt;Can I Vote&lt;/button&gt; &lt;br/&gt;&lt;br/&gt; </br>
+
+    &lt;h1 id="result"&gt;&lt;/h1&gt; </br>
+
+&lt;/body&gt; </br>
+&lt;/html&gt;  </br>
+ <img src="ss3.png" style=" height: 320px; width:48vw;float: right;margin-top:-380px;"/>

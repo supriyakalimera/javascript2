@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Demo8</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        var myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        document.write("Initial Array Values <br/>");
+        for (var i = 0; i < myArr.length; i++) {
+            document.write(myArr[i] + " ");
+        }
+        document.write("<br/><br/>");
+               
+        //Using Reduce()
+        var result = myArr.reduce((sum, item) => sum += item);
+        document.write("Sum = " + result);
+                
+    </script>
+</body>
+</html>
+
